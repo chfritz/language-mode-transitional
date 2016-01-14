@@ -1,0 +1,20 @@
+{
+  "name": "language-mode-transitional",
+  "main": "./lib/language-mode-transitional",
+  "version": "0.0.1",
+  "description": "A transitional package to test resolve a cyclic dependency between new language-mode.coffee version and language packages.",
+  "keywords": [
+  ],
+  "activationCommands": {
+    "atom-workspace": "language-mode-transitional:toggle"
+  },
+  "repository": "https://github.com/chfritz/language-mode-transitional",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "language-c": "0.51.1",
+    "language-javascript": "0.105.0"
+  }
+}

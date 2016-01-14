@@ -1,0 +1,28 @@
+# language-javascript overwrites
+'.source.js':
+  'editor':
+    'commentStart': '// '
+    'foldEndPattern': '^\\s*\\}|^\\s*\\]|^\\s*\\)'
+    decreaseThisIndentPattern: "^\\s*[\\}\\]\\)]"
+    decreaseIndentPattern: "[\\}\\]\\)]"
+    increaseIndentPattern: "[\\{\\[\\(]"
+
+# language-c overwrites
+'.source.c, .source.cpp, .source.objc, .source.objcpp':
+  'editor':
+    'commentStart': '// '
+    'increaseIndentPattern': '(?x)
+       [\\{\\(]
+      |^ \\s* (public|private|protected): \\s* $
+      |^ \\s* @(public|private|protected) \\s* $
+      |^ \\s* \\{ \\} $
+      '
+    'decreaseThisIndentPattern': '(?x)
+       ^ \\s* (\\s* /[*] .* [*]/ \\s*)* \\}
+      |^ \\s* (\\s* /[*] .* [*]/ \\s*)* \\)
+      |^ \\s* (public|private|protected): \\s* $
+      |^ \\s* @(public|private|protected) \\s* $
+      '
+    'decreaseIndentPattern': '(?x)
+       [\\}\\)]
+      '
