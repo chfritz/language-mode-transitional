@@ -1,10 +1,9 @@
 {
   "name": "language-mode-transitional",
   "main": "./lib/language-mode-transitional",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A transitional package to test resolve a cyclic dependency between new language-mode.coffee version and language packages.",
-  "keywords": [
-  ],
+  "keywords": [],
   "activationCommands": {
     "atom-workspace": "language-mode-transitional:toggle"
   },
